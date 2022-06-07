@@ -60,7 +60,7 @@ export class ProductosService {
 
   getProducto( id: string ) {
 
-    return this.http.get(`https://corsanywhere.herokuapp.com/https://servizos.meteogalicia.gal/mgrss/observacion/jsonCamaras.action`);
+    return this.http.get('https://corsanywhere.herokuapp.com/https://servizos.meteogalicia.gal/mgrss/observacion/jsonCamaras.action');
 
   }
 
