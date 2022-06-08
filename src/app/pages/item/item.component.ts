@@ -18,7 +18,6 @@ export class ItemComponent implements OnInit {
                public productoService: ProductosService ) { }
 
   ngOnInit() {
-
     this.route.params
         .subscribe( parametros => {
           console.log(parametros['id']);
