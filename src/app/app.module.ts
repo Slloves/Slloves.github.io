@@ -14,10 +14,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
-import { SearchComponent } from './pages/search/search.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { SearchFilterPipe } from './pipes/search-filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { InicioComponent } from './pages/inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -27,9 +27,9 @@ import { FormsModule } from '@angular/forms';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    SearchComponent,
     ContactoComponent,
-    SearchFilterPipe
+    SearchFilterPipe,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

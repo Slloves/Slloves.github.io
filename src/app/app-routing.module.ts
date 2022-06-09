@@ -4,17 +4,17 @@ import { Routes, RouterModule } from '@angular/router';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
-import { SearchComponent } from './pages/search/search.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
 
 
 const app_routes: Routes = [
+      { path: 'inicio', component: InicioComponent},
     { path: 'home', component: PortafolioComponent },
     { path: 'about', component: AboutComponent },
     { path: 'contact', component:ContactoComponent},
     { path: 'item/:id', component: ItemComponent },
-    { path: 'search/:termino', component: SearchComponent },
-    { path: '**', pathMatch: 'full', redirectTo: 'home' }
+    { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 
 ];
 
