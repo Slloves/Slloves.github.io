@@ -11,6 +11,7 @@ export class AboutComponent implements OnInit {
   constructor( public infoService: InfoPaginaService) { }
 
   ngOnInit() {
+    window.scroll(0,0);
   }
 
 }

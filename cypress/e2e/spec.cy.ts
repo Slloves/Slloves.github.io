@@ -9,7 +9,7 @@ describe('My First Test', () => {
     cy.contains('About').click()
   })
   it('Go to another page', ()=>{
-    cy.contains('Contato').click()
+    cy.contains('Contacto').click()
   })
   it('Funcionan el Formulario', ()=>{
     cy.get('input[id="form1"]').type('Sergio')

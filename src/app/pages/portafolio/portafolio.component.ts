@@ -12,6 +12,7 @@ export class PortafolioComponent implements OnInit {
   constructor( public productosService: ProductosService,  ) { }
 
   ngOnInit() {
+    window.scroll(0,0);
   }
 
 }

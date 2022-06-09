@@ -18,6 +18,7 @@ export class ItemComponent implements OnInit {
                public productoService: ProductosService ) { }
 
   ngOnInit() {
+    window.scroll(0,0);
     this.route.params
         .subscribe( parametros => {
           console.log(parametros['id']);
