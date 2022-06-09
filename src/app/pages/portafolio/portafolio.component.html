@@ -1,7 +1,6 @@
 
 <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
 
-  <!-- 1 -->
   <div align="center" *ngIf="productosService.cargando">
     <h2>Cargando</h2>
 
@@ -29,7 +28,7 @@
     </p>
 
   </div>
-  <div class="form-group">
+  <div *ngIf="!productosService.cargando" class="form-group">
     <input type="text" class="form-control mb-4" placeholder="Search" [(ngModel)]="query" id="listSearch">
   </div>
 
