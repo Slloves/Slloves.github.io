@@ -1,30 +1,42 @@
 <section *ngIf="productoService.info[id]">
   <header
-        class="rk-portfolio-cover item-inside-1">
+        class="rk-portfolio-cover item-inside-1 scale-in-top ">
     <div class="item-inside__meta">
       <h1 class="ae-u-bolder rk-portfolio-title ">{{ productoService.info[id].concello }}</h1>
       <p class="ae-theta rk-portfolio-category ">{{ productoService.info[id].provincia }}</p>
     </div>
   </header>
-  <div class="ae-container-fluid">
+  <div class="ae-container-fluid scale-in-left">
     <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
       <div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
-        <h2 class="rk-portfolio-inner-title ">Ultima actualizacion de la Camara:<br> {{ productoService.info[id].dataUltimaAct|date :'short' }}</h2>
+        <h2 class="rk-portfolio-inner-title ">Ultima actualizacion de la Camara: {{ productoService.info[id].dataUltimaAct|date :'short' }}</h2>
       </div>
     </div>
   </div>
 
   <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
     <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
-      <div class="ae-grid__item item-lg-5 au-lg-ptp-1">
+      <div class="ae-grid__item item-lg-5 au-lg-ptp-1 ">
+        <div class="scale-in-br">
         <p class="ae-eta">Latitud:{{ productoService.info[id].lat }}</p>
         <p class="ae-eta">Longitud{{ productoService.info[id].lon }}</p>
         <a href="http://www.google.com/maps/place/{{productoService.info[id].lat }},{{ productoService.info[id].lon }}"><h3 class="ae-u-bolder">Ir al mapa</h3></a>
       </div>
+      </div>
       <div class="ae-grid__item item-lg-6 item-lg--offset-1">
-        <img src="{{productoService.info[id].imaxeCamara}}" alt="Urku Portfolio">
+        <img class="scale-in-bl" src="{{productoService.info[id].imaxeCamara}}" alt="Imagen Camara">
+      </div>
+    </div>
+    <br>
+    <div class="ae-grid ae-grid--collapse">
+      <div class="ae-grid__item item-lg-8">
+        <img class="scale-in-bl" src="assets/imgs/{{ productoService.info[id]?.provincia }}.jpg">
+      </div>
+      <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
+        <p>Galicia es un sitio fascinante con un monton de lugares que visitar. No te quedes sin descubrir nuestra comunidad</p>
       </div>
     </div>
  </div>
+
 
 </section>

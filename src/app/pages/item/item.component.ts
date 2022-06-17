@@ -15,7 +15,7 @@ export class ItemComponent implements OnInit {
 
 
   constructor( private route: ActivatedRoute,
-               public productoService: ProductosService ) { }
+               public productoService: ProductosService, ) { }
 
   ngOnInit() {
     window.scroll(0,0);

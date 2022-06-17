@@ -29,7 +29,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
     ItemComponent,
     ContactoComponent,
     SearchFilterPipe,
-    InicioComponent
+    InicioComponent,
   ],
   imports: [
     BrowserModule,

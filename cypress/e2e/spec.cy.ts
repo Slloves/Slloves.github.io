@@ -1,14 +1,14 @@
 describe('My First Test', () => {
-  it('Visits the initial project page', () => {
+  it('Pagina Inicial', () => {
     cy.visit('/')
   })
-  it('Go to another page', ()=>{
+  it('Link 1', ()=>{
     cy.contains('Camaras').click()
   })
-  it('Go to another page', ()=>{
-    cy.contains('About').click()
+  it('Link 2', ()=>{
+    cy.contains('Quiénes somos').click()
   })
-  it('Go to another page', ()=>{
+  it('Link 3', ()=>{
     cy.contains('Contacto').click()
   })
   it('Funcionan el Formulario', ()=>{

@@ -18,6 +18,7 @@ export class ProductosService {
   constructor( private http: HttpClient ) {
 
     this.cargarDatos()
+    this.cargarMaps()
 
   }
 
@@ -46,6 +47,13 @@ export class ProductosService {
 
     return this.http.get('https://corsanywhere.herokuapp.com/https://servizos.meteogalicia.gal/mgrss/observacion/jsonCamaras.action');
 
+  }
+  private cargarMaps() {
+    // Leer el archivo JSON
+    this.http.get('assets/data/items.json')
+    .subscribe( (resp: any) => {
+      this.info = resp;
+    });
   }
 
 
